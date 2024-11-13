@@ -1,5 +1,3 @@
-'use client'
-import { useEffect, useState } from 'react';
 import About from "@/components/About";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
@@ -10,15 +8,6 @@ import RecentWork from "@/components/RecentWork";
 import Skills from "@/components/Skills";
 
 const Page = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true); // This will only run on the client
-  }, []);
-
-  if (!isClient) {
-    return null; // Do not render anything on the server
-  }
 
   return (
     <div className="bg-[#0b0e0f]">
