@@ -5,12 +5,12 @@ import { BentoGrid, BentoGridItem } from './ui/bento-grid';
 import { motion } from "framer-motion";
 import { cn } from '@/utils/cn';
 import {
-    IconBoxAlignRightFilled,
-    IconClipboardCopy,
-    IconFileBroken,
-    IconSignature,
-    IconTableColumn,
-  } from "@tabler/icons-react";
+  FaAlignRight, // For IconBoxAlignRightFilled
+  FaClipboard,  // For IconClipboardCopy
+  FaFileAlt,    // For IconFileBroken
+  FaPen,        // For IconSignature
+  FaTable,      // For IconTableColumn
+} from 'react-icons/fa'
 import Image from 'next/image';
 
 const About = () => {
@@ -310,7 +310,7 @@ const SkeletonOne = () => {
       ),
       header: <SkeletonOne />,
       className: "md:col-span-1",
-      icon: <IconClipboardCopy className="h-4 w-4 text-neutral-300" />,
+      icon: <FaAlignRight className="h-4 w-4 text-neutral-300" />,
     },
     {
       title: "Automated Proofreading",
@@ -321,7 +321,7 @@ const SkeletonOne = () => {
       ),
       header: <SkeletonTwo />,
       className: "md:col-span-1",
-      icon: <IconFileBroken className="h-4 w-4 text-neutral-300" />,
+      icon: <FaClipboard className="h-4 w-4 text-neutral-300" />,
     },
     {
       title: "Contextual Suggestions",
@@ -332,7 +332,7 @@ const SkeletonOne = () => {
       ),
       header: <SkeletonThree />,
       className: "md:col-span-1",
-      icon: <IconSignature className="h-4 w-4 text-neutral-300" />,
+      icon: <FaFileAlt className="h-4 w-4 text-neutral-300" />,
     },
     {
       title: "Sentiment Analysis",
@@ -343,7 +343,7 @@ const SkeletonOne = () => {
       ),
       header: <SkeletonFour />,
       className: "md:col-span-2",
-      icon: <IconTableColumn className="h-4 w-4 text-neutral-300" />,
+      icon: <FaPen className="h-4 w-4 text-neutral-300" />,
     },
    
     {
@@ -355,6 +355,6 @@ const SkeletonOne = () => {
       ),
       header: <SkeletonFive />,
       className: "md:col-span-1",
-      icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-300" />,
+      icon: <FaTable className="h-4 w-4 text-neutral-300" />,
     },
   ];
