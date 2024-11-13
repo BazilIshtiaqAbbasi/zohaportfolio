@@ -11,7 +11,7 @@ const Experience = () => {
     <div>
       <TitleText title=" My Experience" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16 ">
-      {experience?.map((val, ind) => {
+      {experience?.map((val) => {
         return (
           <motion.div
           key={val.id}

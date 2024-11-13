@@ -1,7 +1,6 @@
 import React from 'react'
 import TitleText from './TitleText'
 import { StickyScroll } from './ui/sticky-scroll-reveal'
-import Image from 'next/image'
 
 const Education = () => {
   return (

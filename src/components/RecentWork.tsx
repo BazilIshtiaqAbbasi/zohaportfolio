@@ -10,7 +10,7 @@ import Products from "./Products";
 const RecentWork = () => {
     const [selectedCategoriesID,setSelectedCategoriesID] = useState<number | null>(0)
 
-    const filterdWorks = selectedCategoriesID ? work.filter((product, index) => product.categoryId === selectedCategoriesID) : work;
+    const filterdWorks = selectedCategoriesID ? work.filter((product) => product.categoryId === selectedCategoriesID) : work;
     
   return (
     <>
