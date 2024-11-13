@@ -279,7 +279,7 @@ const SkeletonOne = () => {
           className="flex flex-row rounded-2xl border  border-white/[0.2] p-2  items-start space-x-2 bg-gray-900 dark:bg-black"
         >
           <Image
-            src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+            src="/zooo.png"
             alt="avatar"
             height="100"
             width="100"
